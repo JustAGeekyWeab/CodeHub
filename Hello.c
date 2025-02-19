@@ -10,3 +10,4 @@ int main() {
 }
 // gcc source_file.c -o program_name
 // https://www.youtube.com/watch?v=LE9iJ9TpZlU
+// small comment
