@@ -5,11 +5,9 @@
 #include <stdio.h>
 int main() {
    // printf() displays the string inside quotation
-   printf("Hello, World! C style!");
+   printf("Hello, World! C++ style!");
    return 0;
 }
 // gcc source_file.c -o program_name
 // https://www.youtube.com/watch?v=LE9iJ9TpZlU
 // small comment
-// https://www.youtube.com/watch?v=9VE7p-he4fA
-// Code Runner
