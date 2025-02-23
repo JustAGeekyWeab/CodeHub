@@ -3,7 +3,7 @@
 # include <stdio.h>
 
 //Global variables
-int globalVariable;
+int globalVariable; //External identifier
 float globalVariable2 = 5.41232; //Wrong format
 
 #define AVAL 3.14159
@@ -13,7 +13,7 @@ int main(){
 
     printf("1 Global var = %i\n", globalVariable);
 
-    globalVariable = 2;
+    globalVariable = 2; //Functions as an internal identifier
 
     printf("2 Global var = %i\n", globalVariable);
 
