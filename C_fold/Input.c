@@ -15,7 +15,9 @@ int main(){
 
     printf("\nNow enter price and quantity: ");
     scanf("%d %d", &price, &qty);
+    //If you type in a non-integer value, it becomes 0. Nothing happens. Output ends up staying
 
+    printf("\nYou entered two integers : %d and %d!", price, qty);
     printf("\nNew total is %d", totalize(price, qty));
 
     return 0;
