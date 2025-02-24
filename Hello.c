@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-#include <stdio.h>
-int main() {
-   printf("Hello World. C style");
-   return 0;
-}
-=======
 //set Path=C:\MinGW\bin;%PATH%
 
 //https://www.youtube.com/watch?v=9umV9jD6n80
@@ -20,4 +13,3 @@ int main() {
 // small comment
 // https://www.youtube.com/watch?v=9VE7p-he4fA
 // Code Runner
->>>>>>> 592ac0abdb5ec35f798fcdde6c37a4687ed56e18
