@@ -23,3 +23,4 @@ public class Rand1 {
 
 
 //Note to self clarify why package folder is important for java files
+// Temporary Fix? https://github.com/microsoft/vscode-java-debug/issues/606
