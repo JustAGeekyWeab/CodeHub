@@ -1,6 +1,6 @@
 
 // This is a sufficient program that can allow you to play rock paper scissors with an AI.
-// It's not adaptive just yet.
+// It's not adaptive just yet. But it has the input style we need
 import java.util.Scanner;
 import java.util.Random;
 public class Rand2 {
