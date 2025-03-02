@@ -24,7 +24,10 @@ public class Rand4 {
             System.out.println("Type 1 for Low. 2 for Med. 3 for High.");
             int ally = reader.nextInt();
             System.out.print("Selected "+ally+" : ");
-            atkType(ally);
+            if(ally==1){System.out.println("Low"); allylow++;}
+            else if(ally==2){System.out.println("Med"); allymed++;}
+            else if(ally==1){System.out.println("Low"); allyhi++;}
+            else{ System.out.println("Low. Defaulted to Low cause of wrong value"); allylow++;}
 
             int enemy = rand.nextInt(maxthresh) +1;
             System.out.print("Enemy chose " + enemy+ " : ");
@@ -33,10 +36,10 @@ public class Rand4 {
             //Currently not tracking the proper amount of times they intercept each other
             if(ally == enemy){
                 System.out.println("Enemy managed to hit us with a perfect attack to pierce the defense!!");
-                maxthresh++;
-                if(ally == 2) allymed++;
-                else if(ally == 3) allyhi++;
-                else allylow++;
+                //maxthresh++;
+                //if(ally == 2) allymed++;
+                //else if(ally == 3) allyhi++;
+                //else allylow++;
                 wincount++;
 
             }else{
@@ -57,21 +60,31 @@ public class Rand4 {
              */
         }
         System.out.println("\nTotal Rounds: "+rounds);
-        System.out.println("Successful Defense: "+wincount);
+        System.out.println("Times attacked by enemy: "+wincount);
     }
     
-    public static void atkType(int atk){
-        if(atk == 1){
+    public static int atkType(int atk){
+        System.out.println("\nAlly low: "+allylow+" Ally Med: "+(allymed +allylow)+ " Ally High: "+(allymed + allylow + allyhi));
+
+        if(atk < allylow){
             System.out.println("Low");
+
+            return 1;
         }
-        else if(atk == 2){
+        if(atk < allymed+allylow){
             System.out.println("Med");
+
+            return 2;
         }
-        else if(atk == 3){
+        else if(atk < allymed + allylow + allyhi){
             System.out.println("High");
+
+            return 3;
         }
         else{
             System.out.println("Atk Invalid. Defaulting to Low.");
+            allylow++;
+            return 1;
         }
     }
 
