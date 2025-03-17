@@ -1,24 +1,23 @@
 import java.util.Random;
-import java.util.Random;
 
 public class GetRoll {
  
     public static Random rand = new Random();
 
-    int lowcount, medcount, hicount;
+    int rockcount, papercount, scissorcount;
 
-    public char getRoll(int low, int med, int hi){
-        int maxthresh = low + med + hi;
+    public char getRoll(int rock, int paper, int scissor){
+        int maxthresh = rock + paper + scissor;
         int roll = rand.nextInt(maxthresh); //Reaches it. balanced amount
         System.out.print(roll+1);
-        if(roll < low){
-            lowcount++; return 'l';
+        if(roll < rock){
+            rockcount++; return 'r';
         }
-        if(roll < low+med){
-            medcount++; return 'm';
+        if(roll < rock+paper){
+            papercount++; return 'p';
         }
         else{
-            hicount++; return 'h';
+            scissorcount++; return 's';
         }
         
     }
