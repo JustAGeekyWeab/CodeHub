@@ -7,4 +7,6 @@
 * R5 - Accurately adapts based on the choices of high, medium, or low and accurately tracks what you input.
 * R6 - Now uses rock paper scissors and keeps track of all the times you picked.
 
+* RPS2 - A more refined version on my return
+
 * GetRoll - Supposed to calculate the rolls but needs to adress the count adding

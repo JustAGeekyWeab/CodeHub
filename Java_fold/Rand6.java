@@ -8,8 +8,17 @@ public class Rand6 {
     public static void main(String[]args){
         GetRoll roller = new GetRoll();
 
-        char roll = roller.getRoll(allylow, allymed, allyhi);       
-        System.out.println(roll); 
-        //if(roll == 'l');lowrate++;
+        Scanner reader = new Scanner(System.in);
+
+        System.out.print("How many rounds?: ");
+        int roundnum = reader.nextInt();
+
+
+        for(int i = 0; i < roundnum; i++){
+            // Rock = 1, Paper = 2, Scissors = 3
+            char roll = roller.getRoll(allylow, allymed, allyhi);       
+            System.out.println(roll); 
+            //if(roll == 'l');lowrate++;
+        }
     }
 }

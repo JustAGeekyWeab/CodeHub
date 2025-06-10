@@ -86,6 +86,7 @@ public class Rand5 {
         }
         System.out.println("Final tally");
         tallyOut();
+        System.out.println("Total rounds: " + roundnum);
 
     }
 
