@@ -10,3 +10,5 @@
 * RPS2 - A more refined version on my return
 
 * GetRoll - Supposed to calculate the rolls but needs to adress the count adding
+
+Testing to see if everything is still working.
